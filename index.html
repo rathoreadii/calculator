@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator-history-container">
+        <!-- calculator container -->
+        <div id= calculator-container>
+            <input type="text" id="display" readonly>
+            <div class="button-container">
+                <button class="button" onclick="btnClear();">c</button>
+                <button class="button" onclick="btnZero();">0</button>
+                <button class="button" onclick="btnDot();">.</button>
+                <button class="button" onclick="btnOne();">1</button>
+                <button class="button" onclick="btnTwo();">2</button>
+                <button class="button" onclick="btnThree();">3</button>
+                <button class="button" onclick="btnFour();">4</button>
+                <button class="button" onclick="btnFive();">5</button>
+                <button class="button" onclick="btnSix();">6</button>
+                <button class="button" onclick="btnSeven();">7</button>
+                <button class="button" onclick="btnEight();">8</button>
+                <button class="button" onclick="btnNine();">9</button>
+                <button class="button" onclick="btnPlus();">+</button>
+                <button class="button" onclick="btnMinus();">-</button>
+                <button class="button" onclick="btnMultiply();">x</button>
+                <button class="button" onclick="btnResult();">=</button>
+                <button class="button" onclick="btnDivide();">/</button>
+            </div>
+        </div>
+
+        <!-- history container -->
+        <div id="history-container">
+            <h3>History</h3>
+            <div id="history"></div>
+            <button class="button" onclick="btnClearHistory();">Reset History</button>
+        </div>
+    </div>
+
+    <script src="javascript/calculator.js"></script>
+
+</body>
+</html>
